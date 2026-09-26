@@ -352,9 +352,43 @@ export default function HomePage() {
             <h2 style={{ fontSize: '2.4rem', fontWeight: 900, color: '#fff', marginBottom: '0.5rem', letterSpacing: '-0.5px' }}>
               Top Cities &amp; Bus Hubs Across India
             </h2>
-            <p style={{ color: '#94a3b8', fontSize: '1.05rem', maxWidth: '600px', margin: '0 auto' }}>
-              Explore premium sleeper &amp; AC Volvo bus connectivity to India's top 12 major travel destinations
+            <p style={{ color: '#94a3b8', fontSize: '1.05rem', maxWidth: '600px', margin: '0 auto', marginBottom: '2rem' }}>
+              Explore premium sleeper &amp; AC Volvo bus connectivity to India's top major travel destinations
             </p>
+            
+            {/* Search Bar for Destinations */}
+            <div style={{ maxWidth: '400px', margin: '0 auto', position: 'relative' }}>
+              <Search size={18} style={{ position: 'absolute', left: '16px', top: '14px', color: '#94a3b8' }} />
+              <input 
+                type="text" 
+                placeholder="Search destinations..." 
+                onChange={(e) => {
+                  const term = e.target.value.toLowerCase()
+                  const cards = document.querySelectorAll('.destination-card')
+                  cards.forEach(card => {
+                    const name = card.getAttribute('data-name').toLowerCase()
+                    if (name.includes(term)) {
+                      card.style.display = 'flex'
+                    } else {
+                      card.style.display = 'none'
+                    }
+                  })
+                }}
+                style={{
+                  width: '100%',
+                  padding: '0.8rem 1rem 0.8rem 2.8rem',
+                  borderRadius: '30px',
+                  border: '1px solid #334155',
+                  background: 'rgba(30, 41, 59, 0.5)',
+                  color: '#fff',
+                  fontSize: '0.95rem',
+                  outline: 'none',
+                  transition: 'border-color 0.2s ease'
+                }}
+                onFocus={(e) => e.target.style.borderColor = '#e11d48'}
+                onBlur={(e) => e.target.style.borderColor = '#334155'}
+              />
+            </div>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(270px, 1fr))', gap: '1.5rem' }}>
@@ -374,6 +408,8 @@ export default function HomePage() {
             ].map(city => (
               <div
                 key={city.name}
+                className="destination-card"
+                data-name={city.name}
                 onClick={() => handleCitySelect(city.name)}
                 style={{
                   background: '#1e293b',
