@@ -1,21 +1,21 @@
-# YatraLink - Modern Bus Booking Platform
+# YatraLink - Intentionally Vulnerable Bus Booking Platform
 
-YatraLink is a comprehensive, modern bus ticket booking application featuring a beautiful user interface, seamless user experience, and a robust backend. 
+**⚠️ DISCLAIMER: This application is intentionally vulnerable and designed specifically for security testing, educational purposes, and Capture The Flag (CTF) challenges. Do NOT use this codebase in a production environment.**
 
-## 🚀 Features
+YatraLink is a modern bus ticket booking application built to simulate a real-world platform while containing various security flaws and vulnerabilities. It serves as a training ground for security researchers, penetration testers, and developers to practice identifying and exploiting web application vulnerabilities in a safe, controlled environment.
 
-- **Sleek & Modern UI:** Designed with premium aesthetics, smooth animations, and a responsive layout for all devices.
-- **Search & Book Buses:** Easy-to-use search functionality with origin, destination, and travel date inputs.
-- **Seat Selection:** Interactive seat layout for choosing the exact seat you want.
-- **User Authentication:** Secure login and registration for managing bookings and profiles.
-- **Operator & Admin Dashboards:** Dedicated portals for bus operators to manage routes and for admins to oversee platform operations.
-- **Offers & Coupons:** Integrated discount system for passengers.
+## 🚀 Features & Scope
+
+- **Simulated Real-World App:** Features a complete frontend (React) and backend (Node.js/Express) architecture resembling a production booking platform.
+- **Security Testing Playground:** Contains intentional vulnerabilities for practicing penetration testing and secure code review.
+- **CTF Integration:** Includes built-in CTF challenges, dashboards, and flags hidden throughout the application.
+- **Standard Booking Flow:** Search for buses, select seats, manage user profiles, and view operator/admin portals.
 
 ## 🛠 Tech Stack
 
-- **Frontend:** React, Vite, Tailwind CSS (or Custom CSS), Lucide React (Icons)
+- **Frontend:** React, Vite, Tailwind CSS (or Custom CSS)
 - **Backend:** Node.js, Express.js
-- **Database:** SQLite (Default for development) / PostgreSQL
+- **Database:** SQLite (Default for development)
 - **Authentication:** JWT (JSON Web Tokens)
 
 ## 📦 Installation & Setup
@@ -40,7 +40,7 @@ Create a `.env` file in the `backend` directory based on the provided `.env.exam
 ```bash
 cp .env.example .env
 ```
-*(Make sure to update the environment variables as needed, such as database credentials and JWT secrets).*
+*(Leave the default insecure configurations as they are intended for the challenges).*
 
 Start the backend server:
 ```bash
