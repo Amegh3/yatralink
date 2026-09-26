@@ -31,7 +31,7 @@ export default function SeatSelectionPage() {
 
   // Generate realistic sleeper deck seat layout (Lower Deck & Upper Deck)
   useEffect(() => {
-    const baseFare = schedule.base_price || 840
+    const baseFare = Number(schedule.base_price) || 840
     const lowerBerths = []
     const upperBerths = []
 
