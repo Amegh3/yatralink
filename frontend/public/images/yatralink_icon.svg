@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Bus body -->
+  <rect x="12" y="22" width="76" height="50" rx="10" fill="#e11d48"/>
+  <!-- Top stripe -->
+  <rect x="12" y="22" width="76" height="12" rx="10" fill="#be123c"/>
+  <rect x="12" y="30" width="76" height="4" fill="#be123c"/>
+  <!-- Windows row -->
+  <rect x="20" y="38" width="14" height="12" rx="3" fill="#0f172a"/>
+  <rect x="38" y="38" width="14" height="12" rx="3" fill="#0f172a"/>
+  <rect x="56" y="38" width="14" height="12" rx="3" fill="#0f172a"/>
+  <!-- Door -->
+  <rect x="72" y="38" width="10" height="20" rx="2" fill="#0f172a"/>
+  <circle cx="79" cy="48" r="1.2" fill="#e11d48"/>
+  <!-- Bumper -->
+  <rect x="14" y="68" width="72" height="5" rx="2" fill="#9f1239"/>
+  <!-- Wheels -->
+  <circle cx="30" cy="75" r="7" fill="#1e293b"/>
+  <circle cx="30" cy="75" r="3.5" fill="#64748b"/>
+  <circle cx="30" cy="75" r="1.5" fill="#e11d48"/>
+  <circle cx="70" cy="75" r="7" fill="#1e293b"/>
+  <circle cx="70" cy="75" r="3.5" fill="#64748b"/>
+  <circle cx="70" cy="75" r="1.5" fill="#e11d48"/>
+  <!-- Headlights -->
+  <rect x="14" y="56" width="5" height="4" rx="1.5" fill="#fbbf24"/>
+  <rect x="81" y="56" width="5" height="4" rx="1.5" fill="#fbbf24"/>
+  <!-- Side mirror -->
+  <rect x="6" y="36" width="6" height="4" rx="2" fill="#e11d48"/>
+  <rect x="88" y="36" width="6" height="4" rx="2" fill="#e11d48"/>
+  <!-- Route line on top -->
+  <circle cx="30" cy="14" r="4" fill="#fb7185"/>
+  <circle cx="70" cy="14" r="4" fill="#fb7185"/>
+  <line x1="34" y1="14" x2="66" y2="14" stroke="#fb7185" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 3"/>
+</svg>
