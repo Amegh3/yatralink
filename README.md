@@ -1,6 +1,6 @@
 # YatraLink - Intentionally Vulnerable Bus Booking Platform
 
-**⚠️ DISCLAIMER: This application is intentionally vulnerable and designed specifically for security testing, educational purposes, and Capture The Flag (CTF) challenges. Do NOT use this codebase in a production environment.**
+**⚠️ DISCLAIMER: This application is intentionally vulnerable and designed specifically for security testing, educational purposes. Do NOT use this codebase in a production environment.**
 
 YatraLink is a modern bus ticket booking application built to simulate a real-world platform while containing various security flaws and vulnerabilities. It serves as a training ground for security researchers, penetration testers, and developers to practice identifying and exploiting web application vulnerabilities in a safe, controlled environment.
 
